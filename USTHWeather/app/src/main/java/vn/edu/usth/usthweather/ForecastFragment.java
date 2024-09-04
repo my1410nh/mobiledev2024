@@ -66,25 +66,25 @@ public class ForecastFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
         view.setBackgroundColor(0x20FF0000);
 
-        LinearLayout layout = new LinearLayout(getActivity());
-        layout.setOrientation(LinearLayout.VERTICAL);
-        layout.setPadding(20, 20, 20, 20);
+//        LinearLayout layout = new LinearLayout(getActivity());
+//        layout.setOrientation(LinearLayout.VERTICAL);
+//        layout.setPadding(20, 20, 20, 20);
 
         // Day
-        TextView dayTextView = new TextView(getActivity());
-        dayTextView.setText("Thursday");
-        dayTextView.setTextSize(40);
-        dayTextView.setGravity(Gravity.CENTER_HORIZONTAL);
-        dayTextView.setPadding(0, 0, 0, 15);
+//        TextView dayTextView = new TextView(getActivity());
+//        dayTextView.setText("Thursday");
+//        dayTextView.setTextSize(40);
+//        dayTextView.setGravity(Gravity.CENTER_HORIZONTAL);
+//        dayTextView.setPadding(0, 0, 0, 15);
 
         // Weather icon
-        ImageView Icon = new ImageView(getActivity());
-        Icon.setImageResource(R.drawable.cloudy_7803745); // Icon
+//        ImageView Icon = new ImageView(getActivity());
+//        Icon.setImageResource(R.drawable.cloudy_7803745); // Icon
+//
+//        layout.addView(dayTextView);
+//        layout.addView(Icon);
 
-        layout.addView(dayTextView);
-        layout.addView(Icon);
-
-        return layout;
-
+//
+        return inflater.inflate(R.layout.fragment_forecast, container, false);
     }
 }
