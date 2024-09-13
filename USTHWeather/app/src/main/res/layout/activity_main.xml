@@ -7,7 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WeatherActivity">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -26,12 +29,22 @@
         </TextView>
     </LinearLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/ViewPager"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        />
+        android:layout_height="wrap_content"/>
 
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/myViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
